@@ -1,4 +1,4 @@
-# Nginx上传文本文件python实现
+# Nginx上传文本文件
 
 
 ### Nginx配置
@@ -11,6 +11,12 @@
             create_full_put_path  on;
             dav_access group:rw all:r;
         }
+```
+
+### curl实现
+
+```
+curl -T abc http://10.11.20.127:22345/upload/
 ```
 
 ### python实现
