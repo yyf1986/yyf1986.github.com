@@ -36,7 +36,7 @@
     <mkdir dir="${dist.webapps.dir}" />
 </target>
 ```
-#### delete
+#### delete ####
 ```
 <delete includeEmptyDirs="true">
     <fileset dir="${build}"/>
@@ -46,7 +46,7 @@
     <delete dir="${dist}"/>
 </target>
 ```
-#### copy
+#### copy ####
 ```
 <copy file="file" tofile="file.bak"/>
 <copy file="config.xml" todir="${dist.classes.dir}"/>
@@ -61,7 +61,7 @@
     </copy>
 </target>
 ```
-#### move
+#### move ####
 ```
 <move file="file" tofile="file.bak"/>
 <move todir="${targetdir}">
@@ -73,7 +73,7 @@
     </fileset>
 </move>
 ```
-#### compile
+#### compile ####
 ```
 <path id="libraries">
     <fileset dir="${libdir}">
@@ -87,7 +87,7 @@
     <jar destfile="${jardir}/my.jar" basedir="${targetdir}"/>
 </target>
 ```
-#### jar
+#### jar ####
 ```
 <jar destfile="${jardir}/my.jar" basedir="${targetdir}"/>
 <jar destfile="${dist}/lib/app.jar">
@@ -96,7 +96,7 @@
     <fileset dir="${src}/resources"/>
 </jar>
 ```
-## 使用技巧
+## 使用技巧 ##
 - 调用操作系统环境变量
 在project最前面
 `<property environment="SystemVariable"/>`
