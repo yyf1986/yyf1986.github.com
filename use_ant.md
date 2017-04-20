@@ -11,23 +11,19 @@
 ## build.xml组成
 > build.xml文件的组成是，一个根结点project,project里面包含多个target,target内含不同的task。
 
-* project
-|属性|说明|
-|:-|:-|
-|name     |项目名称|
-|default  |默认执行target|
-|basedir  |基础路径|
-* target
-|属性|说明|Required|
-|:-|:-|:-|
-|name|target的名字|Y|
-|depends|需要依赖的其他target|N|
-|description|关于target功能的简短描述|N|
-|if|为了执行本target而被设置的属性的名字|N|
-|unless|为了执行本target而不被设置的属性的名字|N|
+#### project
+* name     项目名称
+* default  默认执行target
+* basedir  基础路径
+#### target
+* name|target的名字|Y|
+* depends|需要依赖的其他target|N|
+* description|关于target功能的简短描述|N|
+* if|为了执行本target而被设置的属性的名字|N|
+* unless|为了执行本target而不被设置的属性的名字|N|
 
-* 常用的task
-#### mkdir
+#### 常用的task
+* mkdir
 ```
 <mkdir dir="build/classes"/>
 <target name="init">
@@ -36,7 +32,7 @@
     <mkdir dir="${dist.webapps.dir}" />
 </target>
 ```
-#### delete 
+* delete 
 ```
 <delete includeEmptyDirs="true">
     <fileset dir="${build}"/>
@@ -46,7 +42,7 @@
     <delete dir="${dist}"/>
 </target>
 ```
-#### copy 
+* copy 
 ```
 <copy file="file" tofile="file.bak"/>
 <copy file="config.xml" todir="${dist.classes.dir}"/>
@@ -61,7 +57,7 @@
     </copy>
 </target>
 ```
-#### move
+* move
 ```
 <move file="file" tofile="file.bak"/>
 <move todir="${targetdir}">
@@ -73,7 +69,7 @@
     </fileset>
 </move>
 ```
-#### compile
+* compile
 ```
 <path id="libraries">
     <fileset dir="${libdir}">
@@ -87,7 +83,7 @@
     <jar destfile="${jardir}/my.jar" basedir="${targetdir}"/>
 </target>
 ```
-#### jar
+* jar
 ```
 <jar destfile="${jardir}/my.jar" basedir="${targetdir}"/>
 <jar destfile="${dist}/lib/app.jar">
