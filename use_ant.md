@@ -16,11 +16,13 @@
 * default  默认执行target
 * basedir  基础路径
 #### target
-* name|target的名字|Y|
-* depends|需要依赖的其他target|N|
-* description|关于target功能的简短描述|N|
-* if|为了执行本target而被设置的属性的名字|N|
-* unless|为了执行本target而不被设置的属性的名字|N|
+|属性|说明|Required|
+|-|-|-|
+|name|target的名字|Y|
+|depends|需要依赖的其他target|N|
+|description|关于target功能的简短描述|N|
+|if|为了执行本target而被设置的属性的名字|N|
+|unless|为了执行本target而不被设置的属性的名字|N|
 
 #### 常用的task
 * mkdir
