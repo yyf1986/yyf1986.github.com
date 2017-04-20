@@ -9,15 +9,15 @@
 </project>
 ```
 ## build.xml组成
->build.xml文件的组成是，一个根结点project,project里面包含多个target,target内含不同的task。
+`build.xml文件的组成是，一个根结点project,project里面包含多个target,target内含不同的task。`
 
-- ### project
+- project
 |属性|说明|
 |:-|:-|
 |name     |项目名称|
 |default  |默认执行target|
 |basedir  |基础路径|
-- ### target
+- target
 |属性|说明|Required|
 |:-|:-|:-|
 |name|target的名字|Y|
@@ -26,7 +26,7 @@
 |if|为了执行本target而被设置的属性的名字|N|
 |unless|为了执行本target而不被设置的属性的名字|N|
 
-- ### 常用的task
+- 常用的task
 #### mkdir
 ```
 <mkdir dir="build/classes"/>
@@ -97,13 +97,8 @@
 </jar>
 ```
 ## 使用技巧
-- ### 调用操作系统环境变量
->在project最前面
-```
-<property environment="SystemVariable"/>
-
-```
->调用
-```
-${SystemVariable.abc}
-```
+- 调用操作系统环境变量
+在project最前面
+`<property environment="SystemVariable"/>`
+- 调用
+`${SystemVariable.abc}`
