@@ -12,9 +12,11 @@
 > build.xml文件的组成是，一个根结点project,project里面包含多个target,target内含不同的task。
 
 #### project
-* name     项目名称
-* default  默认执行target
-* basedir  基础路径
+|属性|说明|
+|-|-|
+|name|项目名称|
+|default|默认执行target|
+|basedir|基础路径|
 #### target
 |属性|说明|Required|
 |-|-|-|
@@ -95,8 +97,8 @@
 </jar>
 ```
 ## 使用技巧
-- 调用操作系统环境变量
-在project最前面
+### 调用操作系统环境变量
+- 在project最前面
 `<property environment="SystemVariable"/>`
 - 调用
 `${SystemVariable.abc}`
