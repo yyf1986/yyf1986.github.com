@@ -1,0 +1,5 @@
+FROM docker.io/centos
+
+COPY mysql57-community-release-el7-11.noarch.rpm /
+
+RUN cd / && rpm -ivh mysql57-community-release-el7-11.noarch.rpm && yum install mysql-community-server.x86_64 -y && yum clean all
