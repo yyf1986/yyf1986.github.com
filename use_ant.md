@@ -102,3 +102,15 @@
 `<property environment="SystemVariable"/>`
 - 调用
 `${SystemVariable.abc}`
+
+
+### 引用build.xml
+```
+<?xml version="1.0"?> 
+<project default="" basedir="." name="MyProject"> 
+	<property name="file1" value="build1.xml"/> 
+	<target name="compile-1"> 
+	        <ant antfile="${file1}" dir="." target="compile"/> 
+	</target> 
+</project>
+```
