@@ -1,0 +1,29 @@
+https://blog.csdn.net/xierhacker/article/list/3
+
+get_tensor_by_name(name)
+
+作用：返回给定名称的tensor
+
+
+tf.Session.__init__(target=”, graph=None, config=None)
+
+tf.Session.run(fetches, feed_dict=None, options=None, run_metadata=None)
+作用： 
+运行操作估算（计算）tensor。 
+参数： 
+fetches: 一个单独的图的元素，或者一个图的元素的列表。或者一个字典，这个字典的值是刚刚所说的一个图的元素（元素列表）（见下面第四部分的例子）。
+图的元素可以是
+一个操作（那么fetch回来的值将是None）；
+一个tensor（反回的值将是将是表示这个tensor值的numpy ndarray对象）；
+一个sparsetensor（稀疏tensor）；
+一个get_tensor_handle的操作；
+一个表示tensor或者操作名称的string 
+feed_dict: 一个字典，为之前“占位”的元素“喂”给值。（具体见第四部分的例子。）
+
+返回值： 
+如果你的fetchs参数传入的图的一个元素，那么返回一个单独的值，
+要是是图的一个元素列表，那么返回就是一个列表，
+要是你传入的是一个字典，那么返回的也是一个字典，这个字典的键和你传入的字典的键是一样的。
+函数返回的值和你传进去的fetch参数的形状是一样的，只是里面的元素是相应的值而已了
+
+
