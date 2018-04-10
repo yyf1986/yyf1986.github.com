@@ -59,3 +59,6 @@ with tf.Session() as sess:
 # 输出:
 # [array([ 14.], dtype=float32)]
 如果没有正确提供 feed, placeholder() 操作将会产生错误.
+
+# 安装python
+https://my.oschina.net/soarwilldo/blog/1607127
