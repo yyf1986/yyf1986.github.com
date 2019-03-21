@@ -15,6 +15,7 @@ chin 299 432 394 484
 ```
 
 - 生成detection-results文件
+
 > 将生成ground-truth文件的txt中的图片放到一个目录，可参考(https://github.com/yyf1986/mAP/blob/master/get_prefiel.py)
 
 ```
