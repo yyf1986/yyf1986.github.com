@@ -17,6 +17,11 @@ filetype plugin indent on    " required
 > 在vundle#begin和vundle#end间增加一行：
 > Plugin 'fatih/vim-go'
 
+vim打开
+执行:PluginInstall
+一开始会有process，一会以后会有done，关闭
+vim打开
+执行:GoInstallBinaries
 
 ### 代码提示，编辑模式下Ctl+x Ctl+o
 ### esc后，输入:GoImports，会自动导入包
