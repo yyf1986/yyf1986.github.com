@@ -23,7 +23,7 @@ vim打开
 vim打开
 执行:GoInstallBinaries
 
-### 代码提示，编辑模式下Ctl+x Ctl+o
+### 代码自动提示，编辑模式下Ctl+x Ctl+o
 ### esc后，输入:GoImports，会自动导入包
 ### 光标移到函数上，gd会自动跳转到函数定义/GoDef，执行:b1退出
 
